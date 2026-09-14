@@ -20,4 +20,10 @@ En esta práctica se diseñó y documentó la arquitectura de una aplicación m�
 - [Archivo de arquitectura](flutter-mobile-architecture.architecture.json): definición estructurada de componentes, límites y conexiones.
 - [Diagrama interactivo](flutter-mobile-architecture.html): visualización completa de la arquitectura.
 - [Verificación visual](flutter-mobile-architecture.visual-check.html): revisión del diagrama en distintos escenarios.
-- [Documentación adicional](docs/index.html): versión disponible dentro de la carpeta `docs`.
+
+
+- [Diagrama de GitHub Pages](https://koudionicio.github.io/Practicas_INTEGRADORA_230237/
+): versión disponible dentro de la carpeta `docs`.
+
+
+
