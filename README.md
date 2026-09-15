@@ -15,6 +15,16 @@ En esta práctica se diseñó y documentó la arquitectura de una aplicación m�
 - Se representó el flujo de control de versiones entre Git y GitHub.
 - Se generaron vistas del diagrama en temas claro y oscuro y se realizaron verificaciones visuales en diferentes resoluciones.
 
+
+## Prácticas realizadas
+
+| N.º | Nombre | Descripción | Potenciador | Estatus |
+|---:|---|---|---:|---|
+| 01 | Metodología de Evaluación de la Materia | El estudiante conocerá la metodología, ponderación de trabajo y evaluación de los temas de cada unidad de la materia.. | 5 | Completada |
+| 02 | Boceto de Arquitectura de Proyecto Integrador con Achify | Las y los estudiantes realizarán la instalación y configuración del agente de modelado aquitectónico denominado Achify, con interacción con la inteligencia artificial de Codex. | 24 | Completada |
+
+---
+
 ### Entregables
 
 - [Archivo de arquitectura](flutter-mobile-architecture.architecture.json): definición estructurada de componentes, límites y conexiones.
