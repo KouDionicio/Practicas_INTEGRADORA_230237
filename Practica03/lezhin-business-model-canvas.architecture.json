@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Business Model Canvas — Lezhin Comics",
+    "output": "lezhin-business-model-canvas.html",
+    "animation": "none",
+    "quality_profile": "showcase",
+    "viewBox": [1000, 900],
+    "views": [
+      { "id": "usuarios-y-valor", "label": "Usuarios y valor", "focus": ["segmentos", "propuesta", "relaciones"], "note": "Cómo se articula la experiencia de lectura para los distintos públicos." },
+      { "id": "operacion", "label": "Operación multiplataforma", "focus": ["canales", "recursos", "actividades"], "note": "Activos y actividades que sostienen web, apps y distribución digital." },
+      { "id": "economia-y-red", "label": "Economía y red de socios", "focus": ["socios", "ingresos", "costos"], "note": "Mecanismos monetarios observables y dependencias de la cadena de valor." }
+    ]
+  },
+  "layout": { "mode": "grid", "origin": [20, 70], "cols": 4, "gapX": 20, "gapY": 20, "cellW": 220, "cellH": 190 },
+  "components": [
+    {
+      "id": "segmentos",
+      "type": "external",
+      "label": "1. Segmentos de clientes",
+      "sublabel": "[Comprobado]\nLectores y fans digitales.",
+      "tag": "Usuarios",
+      "pos": [20, 70],
+      "size": [220, 190]
+    },
+    {
+      "id": "propuesta",
+      "type": "backend",
+      "label": "2. Propuesta de valor",
+      "sublabel": "[Comprobado]\nCatálogo premium multiplataforma.",
+      "tag": "Valor central",
+      "pos": [260, 70],
+      "size": [220, 190]
+    },
+    {
+      "id": "canales",
+      "type": "frontend",
+      "label": "3. Canales",
+      "sublabel": "[Comprobado]\nWeb, apps, tiendas y redes.",
+      "tag": "Web + apps",
+      "pos": [500, 70],
+      "size": [220, 190]
+    },
+    {
+      "id": "relaciones",
+      "type": "frontend",
+      "label": "4. Relaciones con los clientes",
+      "sublabel": "[Comprobado]\nCuenta, recomendaciones y soporte.",
+      "tag": "Interacción",
+      "pos": [740, 70],
+      "size": [220, 190]
+    },
+    {
+      "id": "recursos",
+      "type": "database",
+      "label": "5. Recursos clave",
+      "sublabel": "[Comprobado]\nPlataforma, catálogo y licencias.",
+      "tag": "Activos",
+      "pos": [20, 290],
+      "size": [220, 190]
+    },
+    {
+      "id": "actividades",
+      "type": "backend",
+      "label": "6. Actividades clave",
+      "sublabel": "[Comprobado + inferencia]\nSoftware, contenido y pagos.",
+      "tag": "Operación",
+      "pos": [260, 290],
+      "size": [220, 190]
+    },
+    {
+      "id": "socios",
+      "type": "external",
+      "label": "7. Socios clave",
+      "sublabel": "[Comprobado]\nCreadores y derechos.",
+      "tag": "Red de valor",
+      "pos": [500, 290],
+      "size": [220, 190]
+    },
+    {
+      "id": "ingresos",
+      "type": "cloud",
+      "label": "8. Fuentes de ingresos",
+      "sublabel": "[Comprobado]\nMoneda virtual y episodios.",
+      "tag": "Monetización",
+      "pos": [740, 290],
+      "size": [220, 190]
+    },
+    {
+      "id": "costos",
+      "type": "security",
+      "label": "9. Estructura de costos",
+      "sublabel": "[Inferencia]\nNube, licencias, personal y marketing.",
+      "tag": "Sin cifras públicas",
+      "pos": [20, 510],
+      "size": [220, 190]
+    }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "Business Model Canvas — Lezhin Comics (web + móvil)", "wraps": ["segmentos", "propuesta", "canales", "relaciones", "recursos", "actividades", "socios", "ingresos", "costos"], "pad": 10 }
+  ]
+}
