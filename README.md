@@ -1,39 +1,29 @@
-# Prácticas de la Asignatura de Integradora
+# Prácticas de la asignatura Integradora
 
-## Práctica 02: Arquitectura de una aplicación móvil
+## Descripción del repositorio
 
-En esta práctica se diseñó y documentó la arquitectura de una aplicación móvil desarrollada con Flutter. El diseño representa el flujo principal de las solicitudes autenticadas desde el cliente móvil hasta la API y las capas de persistencia.
+Este repositorio reúne las prácticas, evidencias y productos desarrollados durante la asignatura Integradora. Su propósito es documentar de manera ordenada el trabajo realizado en el diseño y la construcción de propuestas relacionadas con el proyecto integrador, así como conservar sus materiales de consulta.
 
-### Trabajo realizado
+## Datos académicos
 
-- Se definió el cliente móvil multiplataforma para iOS y Android con Flutter.
-- Se incorporó Keycloak como capa de autenticación y control de acceso mediante OAuth 2.0, OpenID Connect y tokens JWT.
-- Se representó una API REST desarrollada con FastAPI para manejar la lógica de negocio y los endpoints.
-- Se documentó la comunicación de la API con PostgreSQL para datos relacionales y MongoDB para datos orientados a documentos.
-- Se agregó la integración con Leaflet o un servicio de mapas para mostrar información geoespacial.
-- Se incluyó la infraestructura local de desarrollo con Docker y Docker Compose.
-- Se representó el flujo de control de versiones entre Git y GitHub.
-- Se generaron vistas del diagrama en temas claro y oscuro y se realizaron verificaciones visuales en diferentes resoluciones.
+- **Docente:** Marco Antonio Hernández
+- **Alumno:** Citlalli Pérez Dionicio
+- **Carrera:** Ingeniería en Desarrollo y Gestión de Software
+- **Matrícula:** 230237
+- **Grupo:** A
+- **Cuatrimestre:** 10
 
+## Organización del repositorio
+
+- `Practica02/`: archivos y documentación de la práctica 2.
+- `docs/`: versión publicada del diagrama para GitHub Pages.
+- `README.md`: información general del repositorio y registro de prácticas.
 
 ## Prácticas realizadas
 
 | N.º | Nombre | Descripción | Potenciador | Estatus |
 |---:|---|---|---:|---|
 | 01 | Metodología de Evaluación de la Materia | El estudiante conocerá la metodología, ponderación de trabajo y evaluación de los temas de cada unidad de la materia.. | 5 | Completada |
-| 02 | Boceto de Arquitectura de Proyecto Integrador con Achify | Las y los estudiantes realizarán la instalación y configuración del agente de modelado aquitectónico denominado Achify, con interacción con la inteligencia artificial de Codex. | 24 | Completada |
+| 02 | [Boceto de Arquitectura de Proyecto Integrador con Achify](https://koudionicio.github.io/Practicas_INTEGRADORA_230237/) | Las y los estudiantes realizarán la instalación y configuración del agente de modelado aquitectónico denominado Achify, con interacción con la inteligencia artificial de Codex. | 24 | Completada |
 
 ---
-
-### Entregables
-
-- [Archivo de arquitectura](flutter-mobile-architecture.architecture.json): definición estructurada de componentes, límites y conexiones.
-- [Diagrama interactivo](flutter-mobile-architecture.html): visualización completa de la arquitectura.
-- [Verificación visual](flutter-mobile-architecture.visual-check.html): revisión del diagrama en distintos escenarios.
-
-
-- [Diagrama de GitHub Pages](https://koudionicio.github.io/Practicas_INTEGRADORA_230237/
-): versión disponible dentro de la carpeta `docs`.
-
-
-
