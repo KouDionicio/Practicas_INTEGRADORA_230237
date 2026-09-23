@@ -19,7 +19,7 @@
       "id": "segmentos",
       "type": "external",
       "label": "1. Segmentos de clientes",
-      "sublabel": "[Comprobado]\nLectores y fans digitales.",
+      "sublabel": "[Comprobado]\nLectores digitales y webtoons.",
       "tag": "Usuarios",
       "pos": [20, 70],
       "size": [220, 190]
@@ -28,7 +28,7 @@
       "id": "propuesta",
       "type": "backend",
       "label": "2. Propuesta de valor",
-      "sublabel": "[Comprobado]\nCatálogo premium multiplataforma.",
+      "sublabel": "[Comprobado]\nCatalogo premium localizado.",
       "tag": "Valor central",
       "pos": [260, 70],
       "size": [220, 190]
@@ -55,7 +55,7 @@
       "id": "recursos",
       "type": "database",
       "label": "5. Recursos clave",
-      "sublabel": "[Comprobado]\nPlataforma, catálogo y licencias.",
+      "sublabel": "[Comprobado]\nPlataforma, catalogo y licencias.",
       "tag": "Activos",
       "pos": [20, 290],
       "size": [220, 190]
@@ -64,7 +64,7 @@
       "id": "actividades",
       "type": "backend",
       "label": "6. Actividades clave",
-      "sublabel": "[Comprobado + inferencia]\nSoftware, contenido y pagos.",
+      "sublabel": "[Inferencia]\nPublicacion, pagos y distribucion.",
       "tag": "Operación",
       "pos": [260, 290],
       "size": [220, 190]
@@ -73,7 +73,7 @@
       "id": "socios",
       "type": "external",
       "label": "7. Socios clave",
-      "sublabel": "[Comprobado]\nCreadores y derechos.",
+      "sublabel": "[Comprobado]\nCreadores y titulares de derechos.",
       "tag": "Red de valor",
       "pos": [500, 290],
       "size": [220, 190]
@@ -91,7 +91,7 @@
       "id": "costos",
       "type": "security",
       "label": "9. Estructura de costos",
-      "sublabel": "[Inferencia]\nNube, licencias, personal y marketing.",
+      "sublabel": "[Inferencia]\nNube, licencias y personal.",
       "tag": "Sin cifras públicas",
       "pos": [20, 510],
       "size": [220, 190]
