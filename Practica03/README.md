@@ -134,3 +134,6 @@ canvas completo.
 ## Conclusiones
 
 Lezhin Comics es una opcion pertinente para esta practica porque permite analizar una plataforma digital con presencia web y movil, contenido propio o licenciado, descubrimiento editorial y monetizacion transaccional. El modelo es adecuado como primera aproximacion academica siempre que sus afirmaciones se mantengan diferenciadas entre evidencia comprobable e inferencia.
+
+
+La versión publicada del diagrama se encuentra en [GitHub Pages](https://koudionicio.github.io/Practicas_INTEGRADORA_230237/).
