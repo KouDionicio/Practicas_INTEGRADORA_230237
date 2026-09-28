@@ -1,29 +1,32 @@
-# Prácticas de la asignatura Integradora
+# Practicas de la asignatura Integradora
 
-## Descripción del repositorio
+## Descripcion del repositorio
 
-Este repositorio reúne las prácticas, evidencias y productos desarrollados durante la asignatura Integradora. Su propósito es documentar de manera ordenada el trabajo realizado en el diseño y la construcción de propuestas relacionadas con el proyecto integrador, así como conservar sus materiales de consulta.
+Este repositorio concentra las practicas, evidencias y productos desarrollados durante la asignatura Integradora. Cada practica cuenta con su propia carpeta y documentacion para identificar el objetivo, el proceso de trabajo, los resultados y las validaciones realizadas.
 
-## Datos académicos
+## Datos academicos
 
-- **Docente:** Marco Antonio Hernández
-- **Alumno:** Citlalli Pérez Dionicio
-- **Carrera:** Ingeniería en Desarrollo y Gestión de Software
-- **Matrícula:** 230237
+- **Docente:** Marco Antonio Hernandez
+- **Alumno:** Citlalli Perez Dionicio
+- **Carrera:** Ingenieria en Desarrollo y Gestion de Software
+- **Matricula:** 230237
 - **Grupo:** A
 - **Cuatrimestre:** 10
 
-## Organización del repositorio
+## Organizacion
 
-- `Practica02/`: archivos y documentación de la práctica 2.
-- `docs/`: versión publicada del diagrama para GitHub Pages.
-- `README.md`: información general del repositorio y registro de prácticas.
+- `Practica02/`: arquitectura de una aplicacion movil con Flutter.
+- `Practica03/`: Business Model Canvas de Lezhin Comics.
+- `docs/`: archivos publicados para GitHub Pages de la practica 3 (Lezhin Comics).
 
-## Prácticas realizadas
+## Practicas realizadas
 
-| N.º | Nombre | Descripción | Potenciador | Estatus |
+| N.º | Nombre | Descripcion | Potenciador | Estatus |
 |---:|---|---|---:|---|
-| 01 | Metodología de Evaluación de la Materia | El estudiante conocerá la metodología, ponderación de trabajo y evaluación de los temas de cada unidad de la materia.. | 5 | Completada |
-| 02 | [Boceto de Arquitectura de Proyecto Integrador con Achify](https://koudionicio.github.io/Practicas_INTEGRADORA_230237/) | Las y los estudiantes realizarán la instalación y configuración del agente de modelado aquitectónico denominado Achify, con interacción con la inteligencia artificial de Codex. | 24 | Completada |
+| 01 | Metodologia de Evaluacion de la Materia | El estudiante conocera la metodologia, ponderacion de trabajo y evaluacion de los temas de cada unidad de la materia.. | 5 | Completada |
+| 02 | Boceto de Arquitectura de Proyecto Integrador con Achify | Las y los estudiantes realizaran la instalacion y configuracion del agente de modelado arquitectonico denominado Achify, con interaccion con la inteligencia artificial de Codex. | 24 | Completada |
+| 03 | [Business Model Canvas de Lezhin Comics](Practica03/README.md) | El estudiante realizara un prompt para solicitar el modelo Business Canvas de una herramienta multiplataforma de uso cotidiano, revisara el resultado, mejorara el prompt y documentara el proceso. | 10 | En proceso |
 
----
+## Publicacion
+
+El diagrama de la practica 3 esta disponible en [GitHub Pages](https://koudionicio.github.io/Practicas_INTEGRADORA_230237/).
