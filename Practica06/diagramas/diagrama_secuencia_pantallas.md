@@ -39,6 +39,7 @@ flowchart LR
     A07 -->|Cancelar| A04
     A04 -->|Agregar episodio| A09["A09 · Agregar episodio"]
     A09 -->|Guardar (inferida)| A04
+    A04 -.->|Abrir detalle · tentativo, rótulo ambiguo| A12["A12 · Detalle (rótulo ambiguo)"]
     A03 -->|Usuarios| A11a["A11a · Gestión de usuarios"]
     A11a -->|Seleccionar usuario (inferida)| A11b["A11b · Detalle / gestión de usuario"]
     A11b -->|Volver (inferida)| A11a
@@ -53,7 +54,7 @@ flowchart LR
   classDef admin fill:#fff0df,stroke:#a85a12,color:#472606;
   classDef exit fill:#f4f4f4,stroke:#777,color:#333;
   class R01,R02,R03,R04,R05,R06,R07,R09,R10,R11,R12,R13,R14,R15 reader;
-  class A01,A02,A03,A04,A05,A06,A07,A09,A11a,A11b,A13,A14,A15 admin;
+  class A01,A02,A03,A04,A05,A06,A07,A09,A11a,A11b,A12,A13,A14,A15 admin;
   class RX exit;
 ```
 

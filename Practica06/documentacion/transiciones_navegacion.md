@@ -33,6 +33,7 @@ Las transiciones siguientes se limitan a controles o destinos que se alcanzan a 
 | A07 Editar información | Cancelar | A04 Gestión de cómics | Administrador/editor | Control observado; retorno inferido. |
 | A04 Gestión de cómics | Agregar episodio | A09 Agregar episodio | Administrador/editor | Observada por acción visible. |
 | A09 Agregar episodio | Guardar | A04 Gestión de cómics | Administrador/editor | Inferida; no se dibuja confirmación. |
+| A04 Gestión de cómics | Abrir detalle (tentativo) | A12 Detalle, rótulo ambiguo | Administrador/editor | Inferida y ambigua: la lámina titula la pantalla 12 como detalle de usuario, pero sus campos parecen de cómic/episodio. Se conserva la conexión como tentativa para revisión. |
 | A03 Menú | Seleccionar usuarios | A11a Gestión de usuarios | Administrador/editor | Inferida por opción visible. |
 | A11a Gestión de usuarios | Seleccionar usuario | A11b Gestión/detalle de usuario | Administrador/editor | Inferida por listado/acciones. |
 | A11b Gestión/detalle de usuario | Volver | A11a Gestión de usuarios | Administrador/editor | Inferida; navegación de retorno no rotulada. |
@@ -44,5 +45,5 @@ Las transiciones siguientes se limitan a controles o destinos que se alcanzan a 
 
 ## Límites de evidencia
 
-Los sketches no especifican reglas de autenticación, errores, confirmaciones, persistencia, selección de rol ni el resultado de compra. El perfil/configuración de cada rol es distinto; no se modelan como una pantalla compartida. La pantalla A12 queda en el inventario, pero no se fuerza en una ruta por su ambigüedad de contenido.
+Los sketches no especifican reglas de autenticación, errores, confirmaciones, persistencia, selección de rol ni el resultado de compra. El perfil/configuración de cada rol es distinto; no se modelan como una pantalla compartida. A12 aparece conectada desde gestión de cómics únicamente mediante una flecha tentativa y ambigua, marcada para revisión.
 

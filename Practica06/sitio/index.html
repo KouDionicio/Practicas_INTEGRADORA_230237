@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Diagrama interactivo de las pantallas y recorridos de Lezhin Comics para la Práctica 06 de Integradora.">
+  <meta name="theme-color" content="#f5f2ee">
+  <link rel="icon" href="data:,">
+  <title>Práctica 06 | Lezhin Comics</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="back-link" href="../">← Portal de prácticas</a>
+    <p class="eyebrow">Integradora · Práctica 06</p>
+    <h1>Secuencia de pantallas<br><span>Lezhin Comics</span></h1>
+    <p class="intro">Explora los recorridos de lector y administrador. Selecciona una pantalla para consultar el sketch que la respalda; arrastra el diagrama o usa el zoom para recorrerlo.</p>
+    <div class="stats" aria-label="Resumen del inventario">
+      <div><strong id="screen-count">—</strong><span>pantallas únicas</span></div>
+      <div><strong id="role-count">—</strong><span>roles</span></div>
+      <div><strong id="shared-count">—</strong><span>compartidas</span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="diagram-section" aria-labelledby="diagram-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Mapa de navegación</p><h2 id="diagram-title">Pantallas y transiciones</h2></div>
+        <div class="legend" aria-label="Leyenda">
+          <span><i class="dot reader"></i>Lector / usuario</span>
+          <span><i class="dot admin"></i>Administrador / editor</span>
+          <span><i class="line-key"></i>Acción del usuario</span>
+          <span><i class="line-key inferred"></i>Transición inferida</span>
+        </div>
+      </div>
+
+      <div class="toolbar" role="toolbar" aria-label="Controles del diagrama">
+        <div class="filters" role="group" aria-label="Filtrar por rol">
+          <button class="filter active" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="filter" data-filter="reader" aria-pressed="false">Lector</button>
+          <button class="filter" data-filter="admin" aria-pressed="false">Administrador</button>
+          <button class="filter" data-filter="shared" aria-pressed="false" disabled>Compartidas (0)</button>
+        </div>
+        <div class="zoom-controls" aria-label="Zoom">
+          <button id="zoom-out" aria-label="Alejar">−</button>
+          <button id="zoom-fit" aria-label="Ajustar diagrama">Ajustar</button>
+          <button id="zoom-in" aria-label="Acercar">+</button>
+        </div>
+      </div>
+
+      <div class="diagram-layout">
+        <div class="canvas-wrap" id="canvas-wrap" tabindex="0" aria-label="Diagrama interactivo. Arrastra para desplazar y usa la rueda o los botones para acercar.">
+          <svg id="diagram" viewBox="0 0 2500 1970" role="img" aria-label="Diagrama de navegación de 28 pantallas de Lezhin Comics">
+            <defs>
+              <marker id="arrow-reader" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 z" fill="#4868c8"/></marker>
+              <marker id="arrow-admin" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 z" fill="#a75c2b"/></marker>
+              <marker id="arrow-ambiguous" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 z" fill="#987334"/></marker>
+            </defs>
+            <g id="viewport">
+              <rect class="lane reader-lane" x="40" y="70" width="2400" height="850" rx="26"/>
+              <rect class="lane admin-lane" x="40" y="1000" width="2400" height="900" rx="26"/>
+              <text class="lane-title reader-label" x="75" y="102">LECTOR / USUARIO</text>
+              <text class="lane-subtitle" x="75" y="128">Inicio: R01 Splash · Descubrimiento, lectura y cuenta · 14 pantallas</text>
+              <text class="lane-title admin-label" x="75" y="1032">ADMINISTRADOR / EDITOR</text>
+              <text class="lane-subtitle" x="75" y="1058">Inicio: A01 Login admin · Gestión representada en los sketches · 14 pantallas</text>
+              <g id="edge-layer"></g>
+              <g id="node-layer"></g>
+            </g>
+          </svg>
+          <div id="load-error" class="load-error" hidden>No se pudo cargar el inventario del diagrama. Comprueba que diagram-data.json esté junto a esta página.</div>
+        </div>
+
+        <aside class="detail-panel" id="detail-panel" aria-live="polite" aria-label="Sketch y detalle de pantalla">
+          <div id="detail-content"></div>
+        </aside>
+      </div>
+      <p class="diagram-hint">El diagrama muestra las 28 pantallas una sola vez. Las líneas punteadas son inferencias a partir de los controles; no representan una prueba de una aplicación funcional.</p>
+    </section>
+
+    <section class="notes-grid" aria-label="Alcance y evidencia">
+      <article><p class="eyebrow">Alcance</p><h2>Dos recorridos</h2><p>Los accesos son independientes y no se dibuja un selector de rol. Los sketches no identifican pantallas compartidas: se muestran 14 pantallas de lector y 14 administrativas, sin contar dos veces las ampliaciones de perfil.</p></article>
+      <article><p class="eyebrow">Rigor</p><h2>Lo observado y lo inferido</h2><p>Las etiquetas de acciones visibles se distinguen de las conexiones inferidas. El rol administrativo aparece en el material académico; no se afirma que sea una interfaz oficial confirmada de Lezhin Comics.</p></article>
+      <article><p class="eyebrow">Pendientes del material</p><h2>Numeración ambigua</h2><p>Faltan los números 08 en ambas láminas y 10 en la administrativa; esta última repite el número 11 y su pantalla 12 tiene un rótulo que no coincide claramente con el contenido.</p></article>
+    </section>
+  </main>
+
+  <footer><a href="https://github.com/KouDionicio/Practicas_INTEGRADORA_230237/blob/main/Practica06/README.md">Documentación de la Práctica 06</a><span>·</span><a href="https://koudionicio.github.io/Practicas_INTEGRADORA_230237/">Práctica 03 · Business Model Canvas</a></footer>
+</body>
+</html>
