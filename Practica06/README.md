@@ -1,184 +1,37 @@
-# Práctica 06: Diagrama de Secuencia de Pantallas (Sketches)
+# Práctica 06: Diagrama de secuencia de pantallas (sketches)
 
-## Aplicación Móvil
+## Plataforma y objetivo
 
-**Actividad:** Diagrama de Secuencia de Pantallas (Sketches) de una Aplicación Móvil con 2 Roles  
-**Valor:** 20 firmas  
-**Modalidad:** Individual  
-**Fecha de entrega:** Viernes 10 de octubre de 2026  
+La plataforma seleccionada para el modelo CANVAS en la Práctica 03 es **Lezhin Comics**. La evidencia de la práctica anterior la describe como una plataforma de webtoons y cómics con canales web y móviles. Esta entrega organiza los sketches existentes para representar los recorridos de lector/usuario y administrador/editor.
 
----
+El objetivo es dejar un diagrama editable de navegación de pantallas para utilizar como referencia al alimentar el agente de Archify. El repositorio contiene **28 pantallas únicas identificables: 14 de lector/usuario y 14 de administrador/editor; 0 compartidas explícitamente**. Por tanto, el requisito de 15 pantallas no está cumplido. No se añadieron pantallas para completar el mínimo.
 
-## Descripción
+## Roles
 
-En esta práctica se desarrollará un **Diagrama de Secuencia de Pantallas** orientado a una aplicación móvil, tomando como base la plataforma seleccionada previamente para la elaboración del **Business Model Canvas**.
+- **Lector/usuario:** descubre cómics, busca y explora títulos, consulta episodios, lee, administra biblioteca/favoritos, monedas e historial, y consulta su perfil.
+- **Administrador/editor:** administra el catálogo, episodios, usuarios y categorías, consulta estadísticas y configuración administrativa.
 
-El diagrama deberá representar el flujo de navegación y la experiencia de usuario dentro de la aplicación, considerando **al menos 2 roles de usuario** y un mínimo de **15 pantallas**, incluyendo pantallas compartidas y pantallas específicas para cada rol.
+Las responsabilidades se infieren de las etiquetas y controles visibles en los sketches. No se ve un selector de rol; existen pantallas de acceso separadas para ambos roles.
 
-Para representar las pantallas se recomienda utilizar **sketches**, aunque también pueden utilizarse **mockups o pantallas finales de la aplicación**.
+## Inventario y relación con assets
 
-Posteriormente, los diseños serán utilizados como referencia para alimentar al agente de **Archify**, con la finalidad de generar un diagrama interactivo que represente visualmente el flujo de navegación y la experiencia de usuario de la plataforma.
+Los archivos `sketches/lector_usuario1.png` y `sketches/admin1.png` son láminas resumen. `lector_usuario2.png` y `admin2.png` amplían, respectivamente, la pantalla 15 de perfil/configuración ya incluida en cada lámina; no cuentan como pantallas nuevas. Los `.jfif` son versiones visualmente equivalentes de los tableros PNG, conservadas sin cambios.
 
----
+El inventario detallado, incluidos identificadores, condición de duplicados y problemas de rotulación, está en [documentacion/inventario_pantallas.md](documentacion/inventario_pantallas.md). La matriz de transiciones y sus inferencias está en [documentacion/transiciones_navegacion.md](documentacion/transiciones_navegacion.md). Los roles están documentados en [documentacion/roles.md](documentacion/roles.md).
 
-## Objetivo
+## Diagrama
 
-Diseñar un diagrama que permita representar de manera clara la secuencia de navegación de una aplicación móvil, mostrando cómo los diferentes roles interactúan con las pantallas y funcionalidades de la plataforma.
+Fuente Mermaid editable: [diagramas/diagrama_secuencia_pantallas.md](diagramas/diagrama_secuencia_pantallas.md). Es un diagrama de flujo de navegación entre pantallas, no un diagrama técnico entre objetos. Los nodos muestran los IDs de este inventario y las flechas describen acciones del usuario. Las conexiones deducidas a partir de controles visibles están marcadas como inferidas en la matriz.
 
-El resultado deberá permitir identificar:
+## Uso como entrada para Archify
 
-- Los diferentes roles de usuario.
-- Las pantallas disponibles para cada rol.
-- Las pantallas compartidas entre los usuarios.
-- La secuencia de navegación.
-- Las acciones realizadas por los usuarios.
-- Las transiciones entre las diferentes pantallas.
-- El flujo general de la experiencia de usuario.
+Proporciona al agente los cuatro archivos de `sketches/` y el Markdown del diagrama, junto con el inventario y la tabla de transiciones. Indica que los tableros resumen contienen las pantallas y que las láminas secundarias solo detallan el perfil/configuración. Solicita que conserve los IDs, los dos roles, las rutas señaladas como inferidas y la distinción entre evidencia e inferencia. No se verificó importación ni generación de un diagrama interactivo por Archify.
 
----
+## Pendientes y observaciones
 
-## Aplicación Seleccionada
+- Hay 14 pantallas únicas por rol (28 total), por debajo del mínimo requerido de 15 por aplicación.
+- No se encontró selección explícita de rol ni pantallas compartidas identificables en los sketches.
+- El tablero lector no muestra la viñeta 08. El tablero admin omite 08 y 10, y usa el número 11 para dos pantallas distintas. Se diferencian como `A11a` y `A11b` sin cambiar la etiqueta original.
+- La evidencia disponible de la Práctica 03 sí identifica Lezhin Comics; por ello la plataforma no queda ambigua.
+- No se encontró un exportador Mermaid instalado/configurado. Se entrega la fuente Markdown; no se generó una imagen exportada.
 
-La aplicación utilizada para esta práctica deberá corresponder a la plataforma seleccionada previamente para desarrollar el **Business Model Canvas**.
-
-### Información de la aplicación
-
-| Elemento | Información |
-|---|---|
-| **Nombre de la aplicación** | [Nombre del proyecto] |
-| **Tipo de aplicación** | Aplicación móvil |
-| **Problema que resuelve** | [Descripción] |
-| **Usuarios principales** | [Usuarios] |
-| **Rol 1** | [Nombre del rol] |
-| **Rol 2** | [Nombre del rol] |
-
----
-
-## Roles de Usuario
-
-El diagrama deberá considerar como mínimo **2 roles** dentro de la plataforma.
-
-### Rol 1: [Nombre del rol]
-
-**Descripción:**  
-[Descripción de las responsabilidades y acciones que puede realizar este usuario.]
-
-**Pantallas específicas:**
-
-- [Pantalla]
-- [Pantalla]
-- [Pantalla]
-
-### Rol 2: [Nombre del rol]
-
-**Descripción:**  
-[Descripción de las responsabilidades y acciones que puede realizar este usuario.]
-
-**Pantallas específicas:**
-
-- [Pantalla]
-- [Pantalla]
-- [Pantalla]
-
----
-
-## Pantallas
-
-La aplicación deberá contar con un mínimo de **15 pantallas** entre las pantallas compartidas y las específicas de cada rol.
-
-### Pantallas compartidas
-
-Son aquellas a las que pueden acceder ambos roles.
-
-| # | Pantalla | Descripción |
-|---|---|---|
-| 1 | [Pantalla] | [Descripción] |
-| 2 | [Pantalla] | [Descripción] |
-| 3 | [Pantalla] | [Descripción] |
-| 4 | [Pantalla] | [Descripción] |
-| 5 | [Pantalla] | [Descripción] |
-
-### Pantallas específicas del Rol 1
-
-| # | Pantalla | Descripción |
-|---|---|---|
-| 6 | [Pantalla] | [Descripción] |
-| 7 | [Pantalla] | [Descripción] |
-| 8 | [Pantalla] | [Descripción] |
-| 9 | [Pantalla] | [Descripción] |
-| 10 | [Pantalla] | [Descripción] |
-
-### Pantallas específicas del Rol 2
-
-| # | Pantalla | Descripción |
-|---|---|---|
-| 11 | [Pantalla] | [Descripción] |
-| 12 | [Pantalla] | [Descripción] |
-| 13 | [Pantalla] | [Descripción] |
-| 14 | [Pantalla] | [Descripción] |
-| 15 | [Pantalla] | [Descripción] |
-
-> La distribución anterior es únicamente un ejemplo. Las 15 o más pantallas deberán definirse de acuerdo con las necesidades reales de la aplicación.
-
----
-
-## Sketches de Pantallas
-
-Para representar la experiencia de usuario se realizarán **sketches de las pantallas** de la aplicación.
-
-Los sketches deberán mostrar de manera general:
-
-- Distribución de los elementos.
-- Botones y controles principales.
-- Menús y opciones de navegación.
-- Información mostrada al usuario.
-- Acciones disponibles.
-- Relación entre las pantallas.
-
-También se pueden utilizar **mockups o pantallas finales** en caso de contar con ellas.
-
-### Sketches
-
-> [Agregar aquí los sketches o imágenes de las pantallas]
-
----
-
-## Diagrama de Secuencia de Pantallas
-
-El diagrama deberá representar la navegación completa de la aplicación, indicando las transiciones entre las diferentes pantallas.
-
-Deberá mostrar:
-
-- Punto de inicio de la aplicación.
-- Inicio de sesión o registro, si corresponde.
-- Selección o identificación del rol.
-- Pantallas compartidas.
-- Pantallas específicas de cada rol.
-- Acciones realizadas por el usuario.
-- Transiciones entre pantallas.
-- Finalización de los diferentes flujos.
-
-### Diagrama
-
-> [Agregar aquí el diagrama de secuencia de pantallas]
-
----
-
-## Flujo por Rol
-
-### Flujo del Rol 1
-
-```text
-Inicio
-  ↓
-[Pantalla 1]
-  ↓
-[Pantalla 2]
-  ↓
-[Pantalla 3]
-  ↓
-[Pantalla específica del Rol 1]
-  ↓
-[Pantalla específica del Rol 1]
-  ↓
-Fin del flujo
