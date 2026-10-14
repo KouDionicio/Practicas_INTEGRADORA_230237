@@ -1,41 +1,35 @@
-# Práctica 06: Diagrama de secuencia de pantallas (sketches)
+# Práctica 06 · Diagrama de secuencia de pantallas
 
-## Plataforma y objetivo
+## Enunciado
 
-La plataforma seleccionada para el modelo CANVAS en la Práctica 03 es **Lezhin Comics**. La evidencia de la práctica anterior la describe como una plataforma de webtoons y cómics con canales web y móviles. Esta entrega organiza los sketches existentes para representar los recorridos de lector/usuario y administrador/editor.
+A partir de la plataforma elegida para el modelo CANVAS, elaborar un diagrama de secuencia de pantallas orientado a una aplicación móvil. Debe considerar al menos dos roles y un mínimo de 15 pantallas compartidas y específicas, y servir como insumo para el agente Archify.
 
-El objetivo es representar de forma navegable las pantallas, acciones y recorridos principales de la aplicación móvil. El inventario identifica **28 pantallas únicas: 14 de lector/usuario y 14 del rol administrativo; ninguna compartida explícitamente**. El requisito de 15 pantallas únicas entre los roles se cumple. No se cuentan como pantallas nuevas las láminas de detalle del perfil, que amplían la pantalla 15 de cada rol.
+La plataforma elegida es **Lezhin Comics**, servicio de webcomics y manhwa con capítulos que pueden desbloquearse mediante monedas. El diagrama describe una propuesta académica de experiencia móvil; las conexiones expresan acciones del usuario y no afirman que exista una aplicación funcional con estos flujos exactos.
 
-## Roles
+## Roles y pantallas
 
-- **Lector/usuario:** descubre cómics, busca y explora títulos, consulta episodios, lee, administra biblioteca/favoritos, monedas e historial, y consulta su perfil.
-- **Administrador/editor:** administra el catálogo, episodios, usuarios y categorías, consulta estadísticas y configuración administrativa.
+El recorrido incluye **23 pantallas**: 7 compartidas, 9 para el rol **Lector** y 7 para **Creador**. El registro permite elegir el rol.
 
-Las responsabilidades se infieren de las etiquetas y controles visibles en los sketches. No se ve un selector de rol; existen pantallas de acceso separadas para ambos roles. El rol administrador/editor se trata como parte de estos sketches académicos; su existencia como interfaz oficial de Lezhin Comics no se verificó.
+- **Compartidas (1–7):** Splash, Onboarding, Iniciar sesión, Registro, Recuperar contraseña, Perfil y ajustes, Notificaciones.
+- **Lector (8–16):** Home, Búsqueda y filtros, Detalle de serie, Lector de capítulos, Capítulo bloqueado, Tienda de monedas, Pago y confirmación, Biblioteca, Comentarios y valoración.
+- **Creador (17–23):** Dashboard del creador, Mis series, Crear / editar serie, Subir capítulo, Estadísticas por serie, Ingresos y retiros, Comentarios de lectores.
 
-## Inventario y relación con assets
+El mapa diferencia el flujo principal de las acciones secundarias y de las ramificaciones de error o acceso. Se puede filtrar por rol, buscar pantallas, activar todas las conexiones, seleccionar nodos, recorrer los flujos, acercar el lienzo y cambiar el tema.
 
-Los archivos `sketches/lector_usuario1.png` y `sketches/admin1.png` son láminas resumen. `lector_usuario2.png` y `admin2.png` amplían, respectivamente, la pantalla 15 de perfil/configuración ya incluida en cada lámina; no cuentan como pantallas nuevas. Los `.jfif` son versiones visualmente equivalentes de los tableros PNG, conservadas sin cambios.
+## Diagrama publicado
 
-El inventario detallado, incluidos identificadores, condición de duplicados y problemas de rotulación, está en [documentacion/inventario_pantallas.md](documentacion/inventario_pantallas.md). La matriz de transiciones y sus inferencias está en [documentacion/transiciones_navegacion.md](documentacion/transiciones_navegacion.md). Los roles están documentados en [documentacion/roles.md](documentacion/roles.md).
+[Abrir el flujo interactivo de Lezhin Comics](https://koudionicio.github.io/Practicas_INTEGRADORA_230237/)
 
-## Diagrama
+![Vista previa del diagrama](../docs/assets/preview.png)
 
-Fuente editable de datos: [diagramas/diagrama_secuencia_pantallas.json](diagramas/diagrama_secuencia_pantallas.json); referencia textual: [diagrama Mermaid](diagramas/diagrama_secuencia_pantallas.md). El visor estático y sus fuentes están en `sitio/`. Cada pantalla tiene un nodo seleccionable y flechas que representan acciones. El visor permite filtrar por rol, desplazar y acercar/alejar el diagrama, y seleccionar un nodo para consultar el sketch original asociado. Las transiciones inferidas y la pantalla administrativa ambigua se identifican en los datos y la matriz.
+## Abrir en local
 
-## Visualización en GitHub Pages
+Desde la raíz del repositorio, inicia un servidor estático para la carpeta publicada:
 
-**[Ver diagrama interactivo en GitHub Pages](https://koudionicio.github.io/Practicas_INTEGRADORA_230237/practica06/)**. La página muestra directamente el diagrama. Los PNG bajo `docs/practica06/assets/` son copias de publicación necesarias porque GitHub Pages sirve el contenido de `docs/`; los originales se conservan en `sketches/`.
+```bash
+python -m http.server 8000 --directory docs
+```
 
-## Uso como entrada para Archify
+Abre [http://localhost:8000/](http://localhost:8000/).
 
-Proporciona al agente los cuatro archivos de `sketches/` y el Markdown del diagrama, junto con el inventario y la tabla de transiciones. Indica que los tableros resumen contienen las pantallas y que las láminas secundarias solo detallan el perfil/configuración. Solicita que conserve los IDs, los dos roles, las rutas señaladas como inferidas y la distinción entre evidencia e inferencia. No se verificó importación ni generación de un diagrama interactivo por Archify.
-
-## Pendientes y observaciones
-
-- Hay 28 pantallas únicas en total, por encima del mínimo de 15 solicitado para ambos roles.
-- No se encontró selección explícita de rol ni pantallas compartidas identificables en los sketches.
-- El tablero lector no muestra la viñeta 08. El tablero admin omite 08 y 10, y usa el número 11 para dos pantallas distintas. Se diferencian como `A11a` y `A11b` sin cambiar la etiqueta original.
-- La evidencia disponible de la Práctica 03 sí identifica Lezhin Comics; por ello la plataforma no queda ambigua.
-- No se encontró un exportador Mermaid instalado/configurado. Se entrega la fuente Markdown; no se generó una imagen exportada.
-
+El sitio usa HTML, CSS y JavaScript sin instalación ni dependencias externas.
