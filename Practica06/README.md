@@ -21,15 +21,3 @@ El mapa diferencia el flujo principal de las acciones secundarias y de las ramif
 [Abrir el flujo interactivo de Lezhin Comics](https://koudionicio.github.io/Practicas_INTEGRADORA_230237/)
 
 ![Vista previa del diagrama](../docs/assets/preview.png)
-
-## Abrir en local
-
-Desde la raíz del repositorio, inicia un servidor estático para la carpeta publicada:
-
-```bash
-python -m http.server 8000 --directory docs
-```
-
-Abre [http://localhost:8000/](http://localhost:8000/).
-
-El sitio usa HTML, CSS y JavaScript sin instalación ni dependencias externas.
