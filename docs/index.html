@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f6f4">
   <meta name="description" content="Diagrama interactivo de 23 pantallas de Lezhin Comics para lectores y creadores.">
+  <link rel="icon" href="data:,">
   <title>Lezhin Comics — Flujo de pantallas</title>
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
@@ -23,11 +24,11 @@
     </section>
     <div class="legend"><span><i class="key shared"></i>Compartido</span><span><i class="key reader"></i>Lector</span><span><i class="key creator"></i>Creador</span><span><i class="line-key"></i>Flujo principal</span><span><i class="line-key secondary"></i>Acción secundaria</span><span><i class="line-key dotted"></i>Validación / error</span><span class="legend-note">Selecciona una pantalla para ver sus detalles</span></div>
     <section class="map-shell" aria-label="Diagrama de secuencia interactivo">
-      <div class="map-viewport" id="map-viewport" tabindex="0" aria-label="Lienzo del diagrama. Arrastra para mover; rueda o pellizca para acercar.">
-        <div class="map" id="map"></div>
+      <div class="map-viewport" id="map-viewport" tabindex="0" aria-label="Lienzo del diagrama. Usa la rueda para desplazarte, Ctrl o Cmd más rueda para zoom y las flechas del teclado para navegar.">
+        <div class="map-spacer" id="map-spacer"><div class="map" id="map"></div></div>
       </div>
       <aside class="minimap" aria-label="Minimapa"><div class="mini-map" id="mini-map"></div><span>VISTA GENERAL</span></aside>
-      <div class="gesture-hint">Arrastra para explorar <span>·</span> Rueda para zoom <span>·</span> <kbd>0</kbd> ajustar</div>
+      <div class="gesture-hint">Rueda desplaza <span>·</span> Ctrl / ⌘ rueda zoom <span>·</span> <kbd>0</kbd> ajustar</div>
     </section>
     <section class="tourbar" id="tourbar" hidden><button id="tour-prev">← Anterior</button><div class="tour-progress"><div><strong id="tour-step">Paso 1 de 1</strong><span id="tour-caption">Recorrido compartido</span></div><div class="progress-track"><i id="progress-fill"></i></div></div><button id="tour-next">Siguiente →</button><button id="tour-close" aria-label="Cerrar recorrido">×</button></section>
     <footer><span>Los trazos punteados representan respuestas o rutas de excepción.</span><span>Lezhin Comics · Experiencia móvil</span></footer>
